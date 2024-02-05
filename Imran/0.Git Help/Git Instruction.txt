@@ -1,0 +1,29 @@
+
+new repo
+
+1. git init
+2. git add --all
+3. git commit -m "commit msg"
+4. git remote add origin "origin link"
+5. git push -u origin master
+
+
+existing repo
+1. git add --all
+2. git commit -m "commit msg"
+3. git push -u origin master
+
+
+updating existing repo
+
+1. git pull origin master
+
+cloning git repo
+
+git clone "repo clone link"
+
+when working with multiple person
+0. git pull
+1. git add --all
+2. git commit -m "commit msg"
+3. git push -u origin master
