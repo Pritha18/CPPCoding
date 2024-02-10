@@ -7,7 +7,7 @@ int main()
 {
 	int n;
 
-    n = 5;
+    	n = 5;
 
 	cout << "Pritha contains: " << n << endl;
 

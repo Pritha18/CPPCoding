@@ -12,7 +12,7 @@ int main(int argc, char const *argv[])
 
 	cin >> pritha;
 
-    // setting precision
+    	// setting precision
 	cout.precision(4); 
 
 	// fixed set digit count after floating point, does not matter if i change precision point without using fixed. it only shows 2 number after the point. only shows whatever point i want if i use precision and fixed both.
