@@ -21,3 +21,13 @@ int main(int argc, char const *argv[])
 
 	return 0;
 }
+
+/*
+	Arithmetic operator
+
+	+ - addition
+	- - substraction
+	* - multipication or product
+	/ - dividation
+	% - modulus or remainder operator
+*/
