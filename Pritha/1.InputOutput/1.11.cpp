@@ -14,7 +14,7 @@ int main()
 	cin >> lowerCaseChar;
 	char upperCaseChar = toupper(lowerCaseChar);
 
-	cout << "UpperCase Character: " << upperCaseChar << endl;
+	cout << "Upper Case Character: " << upperCaseChar << endl;
 
 	return 0;
 }
