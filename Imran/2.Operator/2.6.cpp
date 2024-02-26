@@ -13,6 +13,13 @@ int main(int argc, char const *argv[])
 	// reading two integers from console
 	cin >> x >> y;
 
+	while(y == 0) {
+		cout << "Math error"
+		cout << "we can not divide anything with zero" << endl;
+		cout << "enter second variable which is not zero"
+		cin >> y;
+	}
+
 	// this will return int part of the result
 	int result = x / y;
 

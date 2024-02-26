@@ -19,9 +19,14 @@ int main(int argc, char const *argv[])
 	int i = 1; // initial value
 	int sum = 0; // initially sum needs to set 0
 
-	while (i <= n) {
+	// for loop has 3 parts
+	// initial value
+	// condition
+	// increment or decrement
+
+	// here we using just condition and increment
+	for (; i <= n; ++i) {
 		sum = sum + i;
-		++i;
 	}
 
 	cout << "Series sum is: " << sum << endl;
@@ -38,5 +43,5 @@ int main(int argc, char const *argv[])
 
 		for, while and do while
 
-	but we are gonna learn while loop in this code
+	but we are gonna learn for loop in this code
 */
