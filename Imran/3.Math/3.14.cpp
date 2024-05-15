@@ -3,6 +3,8 @@
 */
 
 #include <iostream>
+#include <cmath>
+// #include <math.h> 
 using namespace std;
 
 int main(int argc, char const *argv[])
@@ -20,3 +22,11 @@ int main(int argc, char const *argv[])
 
 	return 0;
 }
+
+/*
+	math.h or cmath
+
+	you can use anything
+
+	both are same
+*/

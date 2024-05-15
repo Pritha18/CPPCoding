@@ -18,12 +18,15 @@ int main(int argc, char const *argv[])
     cin >> num3;
     
     max = num1;
+    
     if (num2 > max) {
         max = num2;
     }
+
     if (num3 > max) {
         max = num3;
     }
+
     cout << "The maximum is: " << max << endl;
     
     return 0;

@@ -21,6 +21,8 @@ int main(int argc, char const *argv[])
         max = num2;
         cout << "Maximum is num2" << endl;
     }
+
+    // print here with max variable
     
     return 0;
 }

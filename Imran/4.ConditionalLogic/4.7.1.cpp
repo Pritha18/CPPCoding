@@ -11,12 +11,30 @@ int main(int argc, char const *argv[])
 	cout << "enter three int numbers: " << endl;
 	cin >> x >> y >> z;
 
-	if ((x >= y && x <= z) || (x <= y && x >= z)) {
-        	median = x;
-	} else if ((y >= x && y <= z) || (y <= x && y >= z)) {
-        	median = y;
+	if (x > y) {
+		if (x < z) {
+			cout << "median is " << x << endl;
+		} else {
+			// x > z
+			if (y > z) {
+				cout << "median is " << y << endl;
+			} else {
+				cout << "median is " << z << endl;
+			}
+		}
+
 	} else {
-        	median = z;
+		// x < y
+		if (x > z) {
+			cout << "median is " << x << endl;
+		} else {
+			// x < z
+			if (y < z) {
+				cout << "median is " << y << endl;
+			} else {
+				cout << "median is " << z << endl;
+			}
+		}
 	}
 
 	return 0;

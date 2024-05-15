@@ -21,6 +21,8 @@ int main(int argc, char const *argv[])
         min = num2;
         cout << "Minimum is num2" << endl;
     }
+
+    // print here with min variable
     
     return 0;
 }

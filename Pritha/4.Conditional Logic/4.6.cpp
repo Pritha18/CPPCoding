@@ -17,12 +17,15 @@ int main(int argc, char const *argv[])
     cin >> num3;
     
     min = num1;
+    
     if (num2 < min) {
         min = num2;
     }
+
     if (num3 < min) {
         min = num3;
     }
+
     cout << "The minimum is: " << min << endl;
     
     return 0;
