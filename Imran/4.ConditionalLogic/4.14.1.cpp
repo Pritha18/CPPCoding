@@ -20,33 +20,27 @@ int main(int argc, char const *argv[])
 	cout << "enter the two numbers: ";
 	cin >> x >> y;
 
-	cout << "select a operation" << endl;
-	cout << "1. Add" << endl;
-	cout << "2. Subtract" << endl;
-	cout << "3. Multiply" << endl;
-	cout << "4. Divide" << endl;
-	cout << "5. Modulus" << endl;
-
-	int operation;
+	cout << "enter the operation you want to apply with these two numbers: ";
+	char operation;
 	cin >> operation;
 
 	double result = 0;
 
-	if (1 == operation) {
+	if ('+' == operation) {
 		result = x + y;
-	} else if (2 == operation) {
+	} else if ('-' == operation) {
 		result = x - y;
-	} else if (3 == operation) {
+	} else if ('*' == operation) {
 		result = x * y;
-	} else if (4 == operation) {
+	} else if ('/' == operation) {
 		if (0 != y) {
 			result = x / y;
 		} else {
 			cout << "Math Error!!! We can't divide by zero." << endl;
 		}
-	} else if (5 == operation) {
+	} else if ('%' == operation) {
 		if (0 != y) {
-			result = (int) x % (int) y;
+			result =  int(x) % int(y);
 		} else {
 			cout << "Math Error!!! We can't divide by zero." << endl;
 		}
