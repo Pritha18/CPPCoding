@@ -26,3 +26,14 @@ int main(int argc, char const *argv[])
     
     return 0;
 }
+
+
+/*
+    swapping value in c++
+    int temp = x;
+    x = y;
+    y = temp;
+
+    swapping values in python
+    x, y = y, x
+*/

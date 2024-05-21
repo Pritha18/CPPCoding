@@ -12,30 +12,26 @@ int main(int argc, char const *argv[])
 
 	switch (month) {
 	    case 1:
-	           cout << "31" << endl;
-               break;
+            cout << "31" << endl;
+            break;
+
         case 2:
-        	   cout << "28" << endl;
-               break;
-
-               //this steps below aren't working.....also i want input the name of the months like January, February, not numbers. how to do that?
-
-               /*if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
-                days = 29;  // Leap year
-               } else {
-                days = 28;  // Non-leap year
-               }  
-               break; */ 
+            cout << "28 is Not Leap Year" << endl;
+            cout << "29 is Leap Year" << endl;
+            break;
 
         case 3:
-               cout << "31" << endl;
-               break;
+            cout << "31" << endl;
+            break;
+
         case 4:
-               cout << "30" << endl;
-               break;
+            cout << "30" << endl;
+            break;
+
         case 5:
                cout << "31" << endl;
                break;
+               
         case 6:
                cout << "30" << endl;
                break;
@@ -65,3 +61,7 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
+
+/*
+  We will do it again after learning string
+*/
