@@ -1,5 +1,5 @@
 // 4.15. Write a program that read three numbers a,b,c and determine the roots of the quadratic equation:
-			ax^2 + bx + c = 0
+// ax^2 + bx + c = 0
 
 
 #include <iostream>
@@ -26,11 +26,20 @@ int main(int argc, char const *argv[])
         double root = -b / (2 * a);
         
         cout << "Root: " << root << endl;
+<<<<<<< HEAD
     } //else { // confused about how to do this when discriminant < 0 and this whole thing gives error
         //double realPart = -b / (2 * a);
         //double imaginaryPart = sqrt(-discriminant) / (2 * a);
         //cout
     //}
+=======
+    } else { // confused about how to do this when discriminant < 0
+        double realPart = -b / (2 * a);
+        double imaginaryPart = sqrt(-discriminant) / (2 * a);
+        cout << "Real part: " << realPart << endl;
+        cout << "Imaginary part: " << imaginaryPart  << " i^2"<< endl;
+    }
+>>>>>>> fbd647514e6960dd6a79ed733b074d004e6d4c9f
     
     return 0;
 }
