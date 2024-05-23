@@ -10,12 +10,14 @@ int main(int argc, char const *argv[])
 	cout << "please enter the value of n: ";
 	cin >> n;
 
-	int i = 1;
+	int i = 2;
+	int k = 1;
 	int sum = 0;
 
 	while (i <= n) {
-		sum = sum + i * (i - n + i);
-		++i;
+		sum = sum + i * (i - k);
+		i = i + 3;
+		k = k + 1;
 		
 	}
 
