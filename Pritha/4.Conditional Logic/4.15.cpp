@@ -26,7 +26,7 @@ int main(int argc, char const *argv[])
         double root = -b / (2 * a);
         
         cout << "Root: " << root << endl;
-    } //else { // confused about how to do this when discriminant < 0
+    } //else { // confused about how to do this when discriminant < 0 and this whole thing gives error
         //double realPart = -b / (2 * a);
         //double imaginaryPart = sqrt(-discriminant) / (2 * a);
         //cout
