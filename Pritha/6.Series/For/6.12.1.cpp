@@ -1,6 +1,7 @@
-// 6.6. Write a program to calculate the series: 1.2 + 2.3 + 3.4 + ... + n(n+1)
+//6.12. Write a program to calculate the series: 1^1 + 2^2 + 3^3 + ... + n^n
 
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main(int argc, char const *argv[])
@@ -9,11 +10,10 @@ int main(int argc, char const *argv[])
 	cout << "enter the value of n: ";
 	cin >> n;
 
-	
 	int sum = 0;
     
-    for (int i = 1, j = 2; i <= n; ++i, ++j) {
-		sum = sum + i * j;
+    	for (int i = 1; i <= n; ++i) {
+		sum = sum + pow(i, i);
 	}
 
 	cout << "sum of the series is: " << sum << endl;

@@ -11,10 +11,9 @@ int main(int argc, char const *argv[])
 	cout << "enter the value of n: ";
 	cin >> n;
 
-	
 	int sum = 0;
     
-    for (int i = 1, j = 1; i <= n; ++i, j +=2) {
+    	for (int i = 1, j = 1; i <= n; ++i, j +=2) {
 		sum = sum + i * pow(j, 2);
 	}
 

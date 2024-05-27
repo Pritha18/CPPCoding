@@ -9,10 +9,9 @@ int main(int argc, char const *argv[])
 	cout << "enter the value of n: ";
 	cin >> n;
 
-	
 	int sum = 0;
     
-    for (int i = 1, j = 3; i <= n; i +=2, j +=2) {
+    	for (int i = 1, j = 3; i <= n; i += 2, j += 2) {
 		sum = sum + i * j;
 	}
 

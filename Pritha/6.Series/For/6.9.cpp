@@ -1,4 +1,5 @@
-//6.11. Write a program to calculate the series: 1^3 + 2^3 + 3^3 + ... + n^3
+//6.9. Write a program to calculate the series: 1^2 + 2^2 + 3^2 + ... + n^2
+
 
 #include <iostream>
 #include <cmath>
@@ -10,10 +11,9 @@ int main(int argc, char const *argv[])
 	cout << "enter the value of n: ";
 	cin >> n;
 
-	
 	int sum = 0;
     
-    for (int i = 1, j = 3; i <= n; ++i) {
+    	for (int i = 1, j = 2; i <= n; ++i) {
 		sum = sum + pow(i, j);
 	}
 

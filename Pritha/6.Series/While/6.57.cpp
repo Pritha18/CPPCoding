@@ -17,11 +17,9 @@ int main(int argc, char const *argv[])
     }
 
     while(n > 0) {
-    	//if(y < n) {
-    		if(n % y == 0) { 
+    	if(n % y == 0) { 
             cout << n << endl;
         }
-    //}
         --n;
     }
 
