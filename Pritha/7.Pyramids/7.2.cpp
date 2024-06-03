@@ -1,10 +1,11 @@
-/*7.1.    
+/*
+	7.2.	
 		1
-		1 2
-		1 2 3
+		2 2
+		3 3 3
+		4 4 4 4
+		5 5 5 5 5
 */
-
-
 
 #include <iostream>
 using namespace std;
@@ -12,15 +13,15 @@ using namespace std;
 int main(int argc, char const *argv[])
 {
 	int num;
-
 	cout << "enter the value of num: ";
 	cin >> num;
 
-	cout << endl << endl; 
+	cout << endl << endl;
+
 
 	for (int row = 1; row <= num; ++row) {
 		for (int col = 1; col <= row; ++col) {
-			cout << col << " ";
+			cout << row << " ";
 		}
 
 		cout << endl;
