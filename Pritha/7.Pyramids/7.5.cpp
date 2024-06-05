@@ -18,12 +18,13 @@ int main(int argc, char const *argv[])
 
     cout << endl << endl;
 
-    for (int row = 1, start = 2; row <= num; row++) {
-        for (int col = 0; col < row; col++) {
-            cout << (start + row - 1 + col) << " ";  
+        for (int row = 1, start = 2; row <= num; row++) {
+                for (int col = 0; col < row; col++) {
+                        cout << (start + row - 1 + col) << " ";  
+                }
+                
+                cout << endl;  
         }
-        cout << endl;  
-    }
 
     return 0;
 }
