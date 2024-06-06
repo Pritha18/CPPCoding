@@ -1,10 +1,11 @@
 /*
-	7.9.
-		A
-		B B
-		C C C
-		D D D D 
-		E E E E E
+	7.21.
+
+			1
+		      1 2
+		    1 2 3
+		  1 2 3 4
+		1 2 3 4 5
 */
 
 #include <iostream>
@@ -19,9 +20,8 @@ int main(int argc, char const *argv[])
         cout << endl << endl;
 
         for (int row = 1; row <= num; ++row) {
-                char value = 'A' + row - 1;
         	for (int col = 1; col <= row; ++col) {
-        		cout << value << " ";
+        		cout << col << " ";
         	}
 
         	cout << endl;
