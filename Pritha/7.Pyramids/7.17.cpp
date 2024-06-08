@@ -25,8 +25,8 @@ int main(int argc, char const *argv[])
             if ((row + col) % 2 == 0) {
                 cout << 0 << " ";
             } else {
-            cout << 1 << " ";
-         }
+                cout << 1 << " ";
+            }
         }
         cout << endl;
     }

@@ -20,6 +20,13 @@ int main(int argc, char const *argv[])
         cout << endl << endl;
 
         for (int row = 1; row <= num; ++row) {
+
+                for (int i = 1; i <= num - row; ++i) {
+                        // first space is for pyramid logic
+                        // second one is the extra space
+                        cout << " " << " ";
+                }
+
         	for (int col = 1; col <= row; ++col) {
         		cout << col << " ";
         	}
