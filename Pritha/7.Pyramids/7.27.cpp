@@ -19,15 +19,9 @@ int main(int argc, char const *argv[])
     int num = 5; 
     cout << endl << endl;
 
-    
+    // part 1
     for (int row = 1; row <= num; ++row) {
 
-        
-        for (int i = 1; i <= num - row; ++i) {
-            cout << " ";
-        }
-
-        
         char letter = 'A' + row - 1;
         for (int col = 1; col <= row; ++col) {
             cout << letter << " ";
@@ -36,14 +30,8 @@ int main(int argc, char const *argv[])
         cout << endl;
     }
 
-    
+    // part 2
     for (int row = num - 1; row >= 1; --row) {
-
-        
-        for (int i = 1; i <= num - row; ++i) {
-            cout << " ";
-        }
-
         
         char letter = 'A' + row - 1;
         for (int col = 1; col <= row; ++col) {
