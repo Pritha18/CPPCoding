@@ -16,7 +16,10 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    int num = 5; 
+    int num = 26;
+    cout << "enter the value of num: ";
+    cin >> num;
+
     cout << endl << endl;
 
     
