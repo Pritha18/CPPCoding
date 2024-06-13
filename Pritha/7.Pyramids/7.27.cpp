@@ -1,14 +1,13 @@
-/*
-	7.27.
-			A
-			B B
-			C C C 
-			D D D D
-			E E E E E
-			D D D D
-			C C C
-			B B
-			A
+/*7.27.
+				A
+				B B
+				C C C 
+				D D D D
+				E E E E E
+				D D D D
+				C C C
+				B B
+				A
 
 */
 
@@ -17,25 +16,30 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-	int num;
-	cout << "enter the value of num: ";
-	cin >> num;
+    int num = 5; 
+    cout << endl << endl;
 
-	for (int row = 1; row <= num; ++row) {
-		for (int col = 1; col <= row; ++col) {
-			cout << char('A' + row - 1) << " ";
-		}
+    // part 1
+    for (int row = 1; row <= num; ++row) {
 
-		cout << endl;
-	}
+        char letter = 'A' + row - 1;
+        for (int col = 1; col <= row; ++col) {
+            cout << letter << " ";
+        }
 
-	for (int row = num - 1; row > 0; --row) {
-		for (int col = 1; col <= row; ++col) {
-			cout << char('A' + row - 1) << " ";
-		}
+        cout << endl;
+    }
 
-		cout << endl;
-	}
+    // part 2
+    for (int row = num - 1; row >= 1; --row) {
+        
+        char letter = 'A' + row - 1;
+        for (int col = 1; col <= row; ++col) {
+            cout << letter << " ";
+        }
 
-	return 0;
+        cout << endl;
+    }
+
+    return 0;
 }
