@@ -11,15 +11,15 @@ int main(int argc, char const *argv[])
 
     // INT_MAX - golbal variable for max int value in c++
     // INT_MIN - global variable for min int value in c++
-    for (int i = 0; i <= INT_MAX; ++i) {
-        cout << "Enter an integer: ";
-        cin >> number;
+    while(true) {
+	cout << "Enter an integer: ";
+	cin >> number;
 
-        if (number < 0) {
-            break; 
-        }
+	if (number < 0) {
+	    break; 
+	}
 
-        sum += number; 
+	sum += number; 
     }
 
     cout << "The sum of the entered numbers is: " << sum << endl;
