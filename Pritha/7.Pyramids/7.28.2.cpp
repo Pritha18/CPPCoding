@@ -1,13 +1,13 @@
 /*7.28.2.
-			A
-		      B   B
-		    C   C   C
-		  D   D   D   D
-		E   E   E   E   E
-		  D   D   D   D
-		    C   C   C
-		      B   B
-			A
+		A
+	      B   B
+	    C   C   C
+	  D   D   D   D
+	E   E   E   E   E
+	  D   D   D   D
+	    C   C   C
+	      B   B
+		A
 */
 
 #include <iostream>
