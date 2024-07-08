@@ -27,7 +27,10 @@ int main(int argc, char const *argv[])
     }
 
     int powerOfTen = pow(10, digitCount);
-    int swappedNum = (lastDigit * powerOfTen) + (num % powerOfTen / 10 * 10) + firstDigit;
+    // % - to remove the first digit
+    // / - to remove the last digit
+    // * - to prepare to add the last digit
+    int swappedNum = (lastDigit * powerOfTen) + (((num % powerOfTen) / 10) * 10) + firstDigit;
 
     cout << "Number after swapping first and last digits: " << swappedNum << endl;
 

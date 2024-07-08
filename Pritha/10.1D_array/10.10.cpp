@@ -1,4 +1,4 @@
-//10.9. write a program that read and sort an array in discending order
+//10.9. write a program that read and sort an array in descending order
 
 
 #include <iostream>

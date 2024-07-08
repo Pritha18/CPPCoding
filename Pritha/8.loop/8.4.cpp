@@ -7,6 +7,7 @@ using namespace std;
 int main(int argc, char const *argv[]) 
 {
     int number;
+    // factorial is always integer not double
     double factorial = 1; 
   
     cout << "Enter a positive integer: ";
