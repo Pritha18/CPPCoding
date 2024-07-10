@@ -5,23 +5,26 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-	int pritha[3][3];
+	int row, col;
+	cout << "please enter row and col: ";
+	cin >> row >> col;
 
-	float promi[4][2];
+	int imran[row][col];
 
-	double imran[4][5];
+	cout << "please enter the 2D array or matrix" << endl;
 
-	char sakib[2][100][5];
-
-	for (int i = 0; i < 3; ++i) {
-		for (int j = 0; j < 3; ++j) {
-			cin >> pritha[i][j];
+	for (int i = 0; i < row; ++i) {
+		for (int j = 0; j < col; ++j) {
+			cout << "imran[" << i << "][" << j << "] = ";
+			cin >> imran[i][j];
 		}
 	}
 
-	for (int i = 0; i < 3; ++i) {
-		for (int j = 0; j < 3; ++j) {
-			cout << pritha[i][j] << " ";
+	cout << "enter 2D array / matrix is " << endl;
+
+	for (int i = 0; i < row; ++i) {
+		for (int j = 0; j < col; ++j) {
+			cout << imran[i][j] << " ";
 		}
 
 		cout << endl;

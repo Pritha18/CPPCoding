@@ -8,7 +8,7 @@ int main(int argc, char const *argv[])
     int pritha[3][3];
     float promi[4][2];
     double imran[4][5];
-    //char sakib[2][100][5];
+    char sakib[2][3][2];
 
     // Input and display for pritha array
     cout << "Enter values for pritha array (3x3):" << endl;
