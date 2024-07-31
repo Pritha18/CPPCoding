@@ -6,7 +6,7 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    char pritha[64];
+    char pritha[512];
 
     cout << "Enter a line: ";
     cin.getline(pritha, sizeof(pritha));
@@ -17,10 +17,15 @@ int main(int argc, char const *argv[])
     }
 
     cout << "Reversed line: ";
+    char reversePritha[512];
+    int index = 0;
     for (int i = length - 1; i >= 0; i--) {
-        cout << pritha[i];
+        reversePritha[index++] = pritha[i];
     }
-    cout << endl;
+
+    reversePritha[index] = '\0';
+
+    cout << reversePritha << endl;
 
     return 0;
 }
