@@ -11,6 +11,8 @@ int main(int argc, char const *argv[])
 
 	// since we are taking input of both int and character back to back
 	// this getchar will get the endline character to solve the anomaly
+
+	// this anomaly can also occur if we use cin and getline back to back
 	getchar();
 
 	// this is n strings with 512 characters
