@@ -3,6 +3,9 @@
 #include <iostream>
 using namespace std;
 
+// this is another way to declare constants
+const int ERROR = -32465
+
 int divide() 
 {
     int x, y;
@@ -14,7 +17,7 @@ int divide()
         return x / y;
     } else {
         cout << "Error: Division by zero is undefined." << endl;
-        return 0;
+        return ERROR;
     }
 }
 
@@ -22,7 +25,7 @@ int main(int argc, char const *argv[])
 {
     int result = divide();
 
-    if (result != 0) {
+    if (result != ERROR) {
         cout << "The result is: " << result << endl;
     }
 
