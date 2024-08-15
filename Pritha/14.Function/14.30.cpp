@@ -6,7 +6,7 @@ using namespace std;
 
 void sortAscending(int arr[], int size)
 {
-    for (int i = 0; i < size - 1; ++i) //bubble sort
+    for (int i = 0; i < size - 1; ++i) //linear sort
     {
         for (int j = i + 1; j < size; ++j)
         {

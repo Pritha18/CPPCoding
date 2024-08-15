@@ -6,6 +6,7 @@ using namespace std;
 int arrayMin(int arr[], int size)
 {
     int min = arr[0];
+    
     for (int i = 1; i < size; ++i)
     {
         if (arr[i] < min)
@@ -13,6 +14,7 @@ int arrayMin(int arr[], int size)
             min = arr[i];
         }
     }
+
     return min;
 }
 
