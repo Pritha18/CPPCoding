@@ -1,4 +1,4 @@
-//14.40. Write a C program to find all strong numbers between given a interval using functions.
+//14.40. Write a C++ program to find all strong numbers between given a interval using functions.
 
 
 #include <iostream>
@@ -9,6 +9,7 @@ int factorial(int digit) {
     for (int i = 1; i <= digit; i++) {
         fact *= i;
     }
+
     return fact;
 }
 
@@ -22,7 +23,7 @@ bool isStrong(int number) {
         temp /= 10;
     }
 
-    return (sum == number);
+    return sum == number;
 }
 
 void strongNumbers(int start, int end) {

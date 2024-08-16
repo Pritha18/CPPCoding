@@ -1,4 +1,4 @@
-//14.38. Write a C program to find all palindrome numbers between a given interval using functions.
+//14.38. Write a C++ program to find all palindrome numbers between a given interval using functions.
 
 #include <iostream>
 using namespace std;
@@ -13,7 +13,7 @@ bool isPalindrome(int number) {
         number /= 10;
     }
 
-    return (originalNumber == reversedNumber);
+    return originalNumber == reversedNumber;
 }
 
 void displayPalindromes(int start, int end) {

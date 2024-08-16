@@ -1,4 +1,4 @@
-//14.39. Write a C program to find all perfect numbers between given a interval using functions.
+//14.39. Write a C++ program to find all perfect numbers between given a interval using functions.
 
 
 #include <iostream>
@@ -11,7 +11,8 @@ bool isPerfect(int number) {
             sum += i;
         }
     }
-    return (sum == number);
+
+    return sum == number;
 }
 
 void findPerfectNumbers(int start, int end) {

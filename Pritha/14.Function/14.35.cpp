@@ -1,4 +1,4 @@
-//14.35. Write a C program to check whether a number is perfect or not using functions
+//14.35. Write a C++ program to check whether a number is perfect or not using functions
 
 
 #include <iostream>
@@ -11,7 +11,8 @@ bool isPerfect(int number) {
             sum += i;
         }
     }
-    return (sum == number);
+
+    return sum == number;
 }
 
 void result(int number, bool isPerfect) {
