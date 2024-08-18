@@ -1,20 +1,27 @@
 //14.44. Write a function that gets a string and convert it to lowercase
 
 #include <iostream>
-#include <algorithm>
+#include <string>
 using namespace std;
 
-int main(int argc, char const *argv[])
+void convertToLower(string &str) {   
+    for (int i = 0; i < str.length(); ++i) {
+        if (str[i] >= 'A' && str[i] <= 'Z') {
+            str[i] = str[i] + 32;
+        }
+    }
+}
+
+int main(int argc, char const *argv[]) 
 {
-	string input;
-	cout << "enter the line of text: ";
-	getline(cin, input);
+    string input;
 
-	cout << "entered text: " << input << endl;
+    cout << "Enter a line: ";
+    getline(cin, input);
 
-	transform(input.begin(), input.end(), input.begin(), ::tolower);
+    convertToLower(input);
 
-	cout << "lowercase text: " << input << endl;
+    cout << "Entered line in lowercase is: " << input << endl;
 
-	return 0;
+    return 0;
 }

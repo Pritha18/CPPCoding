@@ -1,25 +1,35 @@
 //14.42. Write a function that gets a string and reverse all characters
 
 #include <iostream>
-#include <string>
-#include <algorithm>
 using namespace std;
 
-void reverseString(string& str) {
-    reverse(str.begin(), str.end());
+int getStringLength(const char str[]) {
+    int length = 0;
+    while (str[length]) {
+        length++;
+    }
+    return length;
 }
 
-int main(int argc, char const *argv[])
-{
-    string input;
-    cout << "Enter the line of text: ";
-    getline(cin, input);
+void reverseString(char str[], int length) {
+    for (int i = 0; i < length / 2; i++) {
+        char temp = str[i];
+        str[i] = str[length - i - 1];
+        str[length - i - 1] = temp;
+    }
+}
 
-    cout << "Entered text: " << input << endl;
+int main(int argc, char const *argv[]) {
+    char pritha[64];
 
-    reverseString(input);
+    cout << "Enter a line: ";
+    cin.getline(pritha, sizeof(pritha));
 
-    cout << "Reversed text: " << input << endl;
+    int length = getStringLength(pritha);
+
+    reverseString(pritha, length);
+
+    cout << "Reversed line: " << pritha << endl;
 
     return 0;
 }

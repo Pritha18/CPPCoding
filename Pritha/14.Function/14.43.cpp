@@ -1,20 +1,27 @@
 //14.43. Write a function that gets a string and convert it to uppercase
 
 #include <iostream>
-#include <algorithm>
+#include <string>
 using namespace std;
 
-int main(int argc, char const *argv[])
+void convertToUpper(string &str) {
+    for (int i = 0; i < str.length(); ++i) {
+        if (str[i] >= 'a' && str[i] <= 'z') {
+            str[i] = str[i] - 32;
+        }
+    }
+}
+
+int main(int argc, char const *argv[]) 
 {
-	string input;
-	cout << "enter the line of text: ";
-	getline(cin, input);
+    string input;
 
-	cout << "entered text: " << input << endl;
+    cout << "Enter a line: ";
+    getline(cin, input);
 
-	transform(input.begin(), input.end(), input.begin(), ::toupper);
+    convertToUpper(input);
 
-	cout << "uppercase text: " << input << endl;
+    cout << "Entered line in uppercase is: " << input << endl;
 
-	return 0;
+    return 0;
 }

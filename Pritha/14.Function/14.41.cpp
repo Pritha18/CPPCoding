@@ -1,22 +1,25 @@
 //14.41. Write a function that gets a string and returns it's length
 
-
 #include <iostream>
 using namespace std;
 
-int getStringLength(const string input) {
-    return input.length();  
+int getStringLength(const char str[]) {
+    int length = 0;
+    while (str[length]) {
+        length++;
+    }
+    return length;
 }
 
-int main(int argc, char const *argv[])
-{
-    string userInput;
-    cout << "Enter a line of text: ";
-    getline(cin, userInput);
+int main(int argc, char const *argv[]) {
+    char pritha[64];
 
-    int length = getStringLength(userInput);
+    cout << "Enter a line: ";
+    cin.getline(pritha, sizeof(pritha));
 
-    cout << "Length of the entered line is: " << length << endl;
+    int length = getStringLength(pritha);
+
+    cout << "length: " << length << endl;
 
     return 0;
 }
