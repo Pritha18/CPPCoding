@@ -13,6 +13,17 @@ void modifyString(char str[], const char newStr[])
     str[i] = '\0'; 
 }
 
+// your function name should describe the function is doing
+void copy(char source[], char destination[]) {
+    int i;
+    for (i = 0; source[i]; ++i) {
+        destination[i] = source[i];
+    }
+
+    destination[i] = source[i];
+    // destination[i] = '\0';
+}
+
 int main(int argc, char const *argv[]) 
 {
     char original[512];
