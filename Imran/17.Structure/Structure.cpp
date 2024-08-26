@@ -63,7 +63,7 @@ int main(int argc, char const *argv[])
 	displayPritha(promi);
 
 	// there is no implicit constructor may be
-	// Person sakib("Imran","Hossain", 30, 62);
+	Person sakib("Imran","Hossain", 30, 62);
 	// Pritha imran(sakib, false);
 	
 	// Pritha imran(person: Person(firstName: "Imran", lastName: "Hossain", age: 30, weight: 62), isSingle: false);
