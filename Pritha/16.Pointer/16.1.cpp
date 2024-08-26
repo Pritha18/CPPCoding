@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
 	cout << "value of variable pritha is: " << pritha << endl;
 	cout << "value of variable pritha through pointer is: " << *imran << endl;
 
-
+	// changing value of pritha through pointer variable imran
 	*imran = 80;
 	cout << "value of variable pritha is: " << pritha << endl;
 
