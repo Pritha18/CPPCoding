@@ -1,14 +1,10 @@
+/*
+	This pointer
+	to resolve ambiguous situation
+*/
 
 #include <iostream>
 using namespace std;
-
-/*
-	what is constructor
-
-
-	constructor are basically functions with no return type
-	this function are getting called when you create an object of class or structure
-*/
 
 struct Box
 {
@@ -24,29 +20,15 @@ struct Box
 		width = 0;
 	}
 
-	// this is called default constructor
-	// the best practice is
-	// to always declare a default constructor when you declare a user-defined constructor
-
-	// declaring a constructor
-	// constructor name will same as structure name
-	// it will accept parameters as functions
-	// writing a different name will solve the ambiguous situation
-	// there is a better way
-	// but we will learn that later
-	Box(int _length, int _width) {
-		length = _length;
-		width = _width;
+	// this pointer is a object pointer
+	// which will point to current object
+	// so compiler will know which length belong to which
+	// better ambiguous situation
+	Box(int length, int width) {
+		this -> length = length;
+		this -> width = width;
 	}
 
-	// ambiguous constuctor
-	// why
-	// because
-	// the parameter name as properties of box name is same
-	// Box(int length, int width) {
-	// 	length = length;
-	// 	width = width;
-	// }
 
 	// as you can see
 	// two constructor of same name
@@ -78,3 +60,32 @@ int main(int argc, char const *argv[])
 
 	return 0;
 }
+
+
+/*
+	Before talking about this pointer
+
+	let's talk about access operator
+
+	in structure (.)dot is called access operator
+
+	struct Box
+	{
+		int length;
+		int width;
+	};
+
+	Box red;
+	
+	// here we are accesing the properties of box structure with (.) operator
+	// that's why it's called access operator
+	red.length = 5;
+
+	Access oprator has two variations
+	(.) when the variable is value type
+	(->) whene the variable is pointer type
+
+	Box *pritha;
+	pritha->length = 5;
+	pritha -> width = 5;
+*/
