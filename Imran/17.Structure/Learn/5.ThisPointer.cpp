@@ -82,8 +82,8 @@ int main(int argc, char const *argv[])
 	red.length = 5;
 
 	Access oprator has two variations
-	(.) when the variable is value type
-	(->) whene the variable is pointer type
+	(.) dot. when the variable is value type
+	(->) arrow. whene the variable is pointer type
 
 	Box *pritha;
 	pritha->length = 5;
