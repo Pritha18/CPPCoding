@@ -62,12 +62,12 @@ int main(int argc, char const *argv[])
 
 	displayPritha(promi);
 
-	// there is no implicit constructor may be
-	Person sakib("Imran","Hossain", 30, 62);
+	// there is no user-defined constructor
+	// that's why this gonna give error
+	// Person sakib("Imran","Hossain", 30, 62);
 	// Pritha imran(sakib, false);
 	
-	// Pritha imran(person: Person(firstName: "Imran", lastName: "Hossain", age: 30, weight: 62), isSingle: false);
-	
-	// next topic constructor
+	// Pritha imran(person: Person("Imran", "Hossain", 30, 62), false);
+
 	return 0;
 }
