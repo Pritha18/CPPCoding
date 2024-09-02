@@ -15,7 +15,7 @@ struct Box
 
 int main(int argc, char const *argv[])
 {
-	// implicit constructor is getting called when we are creating this object
+	// implicit constructor is getting called when we are creating this object / variable
 	// all elements will intialized with 0 value
 	Box pritha;
 

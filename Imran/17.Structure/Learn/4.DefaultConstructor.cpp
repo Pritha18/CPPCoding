@@ -19,6 +19,7 @@ struct Box
 	// implicit constructor is disabled
 	// so we should create a same constructor as implicit constructor
 	// to keep the implicit constructor functionality
+	// defualt constructor is the implicit constructor what we write explicitly
 	Box() {
 		length = 0;
 		width = 0;
