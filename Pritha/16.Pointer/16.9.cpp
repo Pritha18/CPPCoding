@@ -4,6 +4,16 @@
 #include <iostream>
 using namespace std;
 
+void _findMax(int a, int b, int c, int max) {
+    if (a > b && a > c) {
+        *max = a;
+    } else if (b > c) {
+        *max = b;
+    } else {
+        *max = c;
+    }
+}
+
 void findMax(int *a, int *b, int *c, int *max) {
     if (*a > *b && *a > *c) {
         *max = *a;

@@ -4,6 +4,10 @@
 #include <iostream>
 using namespace std;
 
+void substract(int x , int y, int *result) {
+	*result = x - y;
+}
+
 void subNumbers(int *x, int *y, int *result) {
     *result = *x - *y;
 }
@@ -17,7 +21,8 @@ int main(int argc, char const *argv[]) {
     cout << "Enter the second number: ";
     cin >> y;
     
-    subNumbers(&x, &y, &sub);
+    // subNumbers(&x, &y, &sub);
+    subtraction(x, y, &sub);
     
     cout << "The subtraction of " << x << " and " << y << " is: " << sub << endl;
     
