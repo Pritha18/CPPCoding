@@ -55,9 +55,12 @@ void deleteFromBegin() {
 		cout << "Error!" << endl;
 		return;
 	}
+
 	if (NULL == head -> next) {
 		head = NULL;
+		return;
 	}
+
 	head = head -> next;
 }
 
@@ -85,7 +88,9 @@ int main(int argc, char const *argv[])
 
 		insertAtEnd(value);
 	}
+
 	display();
+	
 	deleteFromBegin();
 
 	display();

@@ -28,6 +28,7 @@ void insertAtEnd(int value) {
 		head = tempNode;
 		return;
 	}
+
 	Node* travel = head;
 
 	while(NULL != travel -> next) {
@@ -44,6 +45,8 @@ void insertAtBegin(int value) {
 		head = tempNode;
 		return;
 	}
+
+	tempNode -> next = head -> next;
 	head = tempNode;
 }
 
@@ -55,7 +58,9 @@ void deleteFromBegin() {
 
 	if (NULL == head -> next) {
 		head = NULL;
+		return;
 	}
+
 	head = head -> next;
 }
 
@@ -64,8 +69,10 @@ void deleteFromEnd() {
 		cout << "Error!" << endl;
 		return;
 	}
+
 	if (NULL == head -> next) {
 		head = NULL;
+		return;
 	}
 
 	Node* travel = head;
@@ -73,6 +80,7 @@ void deleteFromEnd() {
 	while(NULL != travel -> next -> next) {
 		travel = travel -> next;
 	}
+	
 	travel -> next = NULL;
 }
 
