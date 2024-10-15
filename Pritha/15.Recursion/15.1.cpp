@@ -4,10 +4,11 @@
 using namespace std;
 
 int factorial(int n) {
-    if (1 == n) {
-        return 1;
-    }
-    return n * factorial(n - 1);
+	if (1 == n) {
+		return 1;
+	}
+	
+	return n * factorial(n - 1);
 }
 
 int main(int argc, char const *argv[])
