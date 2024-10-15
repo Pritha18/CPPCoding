@@ -4,17 +4,17 @@
 using namespace std;
 
 void range(int n) {
-    if (n > 100) {
-        return 0;  
-    }
-
-    cout << n << endl;  
-
-    return range(n + 1); 
+        if (n > 100) {
+                return;
+        }
+        
+        cout << n << endl;  
+        
+        range(n + 1);
 }
 
 int main(int pritha, char** imran) {
-   
+        range(50);
 
-    return 0;
+        return 0;
 }

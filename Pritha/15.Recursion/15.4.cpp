@@ -11,13 +11,8 @@ int fibonacci(int n) {
 }
 
 int main(int pritha, char** imran) {
-    if (pritha > 10) {
-        return 0;
-    }
-
+    
     cout << "Fibonacci number " << pritha << ": " << fibonacci(pritha) << endl;
-
-    main(pritha + 1, imran);
 
     return 0;
 }
